@@ -9,6 +9,7 @@ export default function App() {
   return (
     <>
       <section>
+        <h1> wont show anything for some reason</h1>
         {bands.map((band) => {
           <Cards key={band.id} band={band} />;
         })}
