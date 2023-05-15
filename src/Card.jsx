@@ -3,32 +3,18 @@ import "./App.css";
 import bands from "./assets/songs.json";
 
 function Cards() {
-  // return (
-  //   <div>
-  //     {bands.map((band) => {
-  //       <div id="list" key={bands.id}>
-  //         <h2>band name: {bands["band_name"]}</h2>
-  //         <p> type: {bands["type"]}</p>
-  //         <p> description: {band["description"]}</p>
-  //       </div>;
-  //     })}
-  //   </div>
-  // );
   return (
     <>
-      <div>
+      <section>
         {bands.map((band) => {
-          // {
-          //   console.log(band.description);
-          // }
-          <songCard key={band.id} />;
+          <SongCard key={band.id} />;
         })}
-      </div>
+      </section>
     </>
   );
 }
 
-function songCard({ band }) {
+function SongCard({ band }) {
   return (
     <div className="bandCard">
       <h2 className="bandName">{band.name}</h2>
@@ -47,4 +33,5 @@ function songCard({ band }) {
     </div>
   );
 }
+
 export default Cards;
