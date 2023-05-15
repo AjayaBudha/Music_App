@@ -1,0 +1,40 @@
+[
+  {
+    "band_name": "Gorillaz",
+    "type": "Alternative/Indie",
+    "description": "Gorillaz are an English virtual band formed in 1998 by musician Damon Albarn and artist Jamie Hewlett, from London. The band primarily consists of four fictional members: 2-D, Murdoc Niccals, Noodle, and Russel Hobbs.",
+    "band_image": "https://www.rollingstone.com/wp-content/uploads/2020/10/gorillaz-review.jpg?w=1581&h=1054&crop=1",
+    "songs": [
+      {
+        "name": "Feel Good Inc.",
+        "release_date": "2005",
+        "cover_art": "https://en.wikipedia.org/wiki/Feel_Good_Inc.#/media/File:Feel_Good_Inc._Artwork.jpg"
+      },
+      {
+        "name": "Andrromeda",
+        "release_date": "2017",
+        "cover_art": "https://gorillaz.fandom.com/wiki/Andromeda_(D.R.A.M._Special)?file=Cdfead51d19a4687485065a9eca3a1f2ddcfd205.jpg"
+      }
+    ],
+    "id": 1
+  },
+  {
+    "band_name": "Khalid",
+    "type": "R&B/Soul",
+    "description": "Khalid Donnel Robinson, known mononymously as Khalid, is an American singer and songwriter. He is signed to Right Hand Music Group and RCA Records. He rose to fame after the release of his debut studio album American Teen, which was certified 4× platinum by the Recording Industry Association of America.",
+    "band_image": "https://media.vanityfair.com/photos/5a0b3f6497e3f93bfc1ab923/master/w_1280,c_limit/MAG-1217-Hot-Tracks-Khalid.jpg",
+    "songs": [
+      {
+        "name": "Location",
+        "release_date": "2017",
+        "cover_art": "https://t2.genius.com/unsafe/252x252/https%3A%2F%2Fimages.genius.com%2Fdea9a1623942e09626d34dc8f764dfdf.1000x1000x1.jpg"
+      },
+      {
+        "name": "8teen",
+        "release_date": "2017",
+        "cover_art": "https://music.fandom.com/wiki/American_Teen?file=Khalid_-_American_Teen.png"
+      }
+    ],
+    "id": 2
+  }
+]
