@@ -1,6 +1,6 @@
 import "./App.css";
-
-import bands from "./assets/songs.json";
+import React, { useState } from "react";
+import bands from "./assets/songs";
 
 function Cards() {
   return (
