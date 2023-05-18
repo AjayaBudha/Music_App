@@ -1,9 +1,13 @@
 .songs {
   display: flex;
   margin: 10%;
-  padding: 3rem;
+  padding: 1rem;
   border-style: solid;
   border-color: red;
+}
+.likeButton {
+  height: 40%;
+  width: 30%;
 }
 
 .songCoverArt {

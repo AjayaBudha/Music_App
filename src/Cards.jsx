@@ -20,7 +20,14 @@ function BandCard({ band }) {
 function EachSong({ songs }) {
   const [isLike, setIsLike] = useState(false);
 
-  const likeClicked = () => {
+  const handleLike = (e) => {
+    if (isLike) {
+      setIsLike((prevState) => (prevState = false));
+      e.target.innerText = "Like";
+    } else {
+      setIsLike((prevState) => (prevState = true));
+      e.target.innerText = "Unlike";
+    }
     setIsLike(!isLike);
   };
   return (
@@ -31,7 +38,7 @@ function EachSong({ songs }) {
           <h3 className="songName">Song Name : {songs.name}</h3>
           <h4 className="release_date">Release Date: {songs.release_date}</h4>
         </div>
-        <button className="likeButton" onClick={likeClicked}>
+        <button className="likeButton" onClick={handleLike}>
           Like
         </button>
       </div>
