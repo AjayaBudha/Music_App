@@ -1,0 +1,22 @@
+.songs {
+  display: flex;
+  margin: 10%;
+  padding: 3rem;
+  border-style: solid;
+  border-color: red;
+}
+
+.songCoverArt {
+  float: left;
+  max-width: 30%;
+  height: auto;
+}
+
+.bandImage {
+  max-width: 50%;
+}
+
+.bandCard {
+  border-style: solid;
+  margin: 10%;
+}

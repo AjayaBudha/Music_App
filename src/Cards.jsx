@@ -1,14 +1,15 @@
 import "./App.css";
 import React, { useState } from "react";
+import "./cards.css";
 
 function BandCard({ band }) {
   return (
     <div className="bandCard">
       <h2 className="bandName">name: {band.band_name}</h2>
-      <img src={band.band_image}></img>
+      <img src={band.band_image} className="bandImage"></img>
       <p className="type">type: {band.type}</p>
       <p className="description">{band.description}</p>
-      <div className="songs">
+      <div className="allSongs">
         {band.songs.map((songs, index) => {
           return <EachSong key={index} songs={songs} />;
         })}
@@ -17,12 +18,22 @@ function BandCard({ band }) {
   );
 }
 function EachSong({ songs }) {
+  const [isLike, setIsLike] = useState(false);
+
+  const likeClicked = () => {
+    setIsLike(!isLike);
+  };
   return (
     <>
       <div className="songs">
-        <h3 classname="songName">Song Name : {songs.name}</h3>
-        <img src={songs.cover_art}></img>
-        <div classname="release_date">Release Date: {songs.release_date}</div>
+        <img src={songs.cover_art} className="songCoverArt"></img>
+        <div>
+          <h3 className="songName">Song Name : {songs.name}</h3>
+          <h4 className="release_date">Release Date: {songs.release_date}</h4>
+        </div>
+        <button className="likeButton" onClick={likeClicked}>
+          Like
+        </button>
       </div>
     </>
   );
